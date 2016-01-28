@@ -90,16 +90,33 @@
   width: 100%;
 }
 
+/*公用*/
+.titleConn {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.titleConn h2 {
+  text-align: center;
+  overflow: hidden;
+  margin-top: 0;
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.titleConn h5 {
+  font-size: 14px;
+  color: #000;
+  margin: 10px 0;
+  line-height: 20px;
+  overflow: hidden;
+}
+
 /*三张图文介绍*/
 .grid-title {
   text-align: center;
   margin: 60px 0 45px 0;
-}
-
-.grid-title h2, .articleList .title, .semi-title h3 {
-  color: #000;
-  font-weight: bold;
-  font-size: 24px;
 }
 
 .content-grid:after {
@@ -152,12 +169,8 @@
 }
 
 .articleList li {
-  clear: both
-}
-
-.articleList .article-title {
-  text-align: center;
-  margin: 40px 0;
+  clear: both;
+  .mb30;
 }
 
 .articleList .col-md-5 {
@@ -166,32 +179,28 @@
 
 .articleList .col-md-5 img {
   width: 100%;
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }
 
-.articleList .col-md-7 h2 {
-  font-size: 22px;
-  text-align: center;
-  overflow: hidden;
-  margin-top: 0;
+.article-content h2 {
+  .mt0;
+  font-size: 1.8em;
 }
 
-.articleList .col-md-7 h5 {
-  font-size: 14px;
-  color: #969696;
-  margin: 15px 0;
-  line-height: 20px;
-  overflow: hidden;
+.article-content h5 {
+  .cor9;
+  .oh;
+  .h_lh(36px, 18px);
 }
 
-.articleList .col-md-7 article {
+.article-content article {
   font-size: 14px;
   color: #232323;
   height: 80px;
   overflow: hidden;
 }
 
-.articleList .col-md-7 a {
+.article-content a {
   width: 160px;
   height: 40px;
   line-height: 40px;
@@ -206,13 +215,13 @@
   text-decoration: none;
 }
 
-.articleList .col-md-7 a b {
+.article-content a b {
   position: relative;
   z-index: 99;
   font-weight: 100;
 }
 
-.articleList .col-md-7 a p {
+.article-content a p {
   width: 160px;
   height: 40px;
   line-height: 40px;
@@ -224,7 +233,7 @@
   transition-duration: 0.45s;
 }
 
-.articleList .col-md-7 a:hover p {
+.article-content a:hover p {
   content: "";
   background: #BA0C2F;
   border-radius: 4px;
@@ -249,18 +258,20 @@
   background-color: rgba(0, 0, 0, 0.65);
 }
 
-.semi-title h3, .semi-title h5 {
-  text-align: center;
-  margin: 0;
+.semi-background .titleConn {
+  .mt0;
 }
 
-.semi-title h3 {
-  padding: 40px 0 12px 0;
-  color: #fff;
+.semi-background .titleConn h2 {
+  .pt30;
+  .cor1;
+}
+
+.semi-background .titleConn h5 {
+  .cor1;
 }
 
 .special-item {
-  padding-top: 40px;
 }
 
 .special-item .col-lg-4 {
@@ -297,13 +308,57 @@
   color: #fff;
 }
 
+/**/
+.content-grid2 {
+  .mt20;
+}
+
+.lost-item {
+  .pr;
+  .mb10;
+}
+
+.lost-item img {
+  .wp100;
+}
+
+.lost-content {
+  .tc;
+  .bag1;
+  .p10;
+}
+
+.lost-content font {
+  .f14;
+  color: #5BE621;
+}
+
+.lost-content article {
+  .f10;
+  .oh;
+  .h_lh(105px, 25px);
+}
+
+.lost-time {
+  .w(50px);
+  .h_lh(50px, 50px);
+  .f10;
+  .cor1;
+  .tc;
+  border-radius: 50%;
+  background: #4CC2C4;
+  .m0a;
+  .mt(-17px);
+}
+
+
 /*响应媒体查询*/
 @media (max-width: 1280px) {
-  .articleList .col-md-7 article {
+  .article-content article {
     height: 60px;
   }
 
-  .articleList .col-md-7 a {
+  .article-content a {
     margin: 10px 0;
   }
 }
@@ -314,13 +369,23 @@
     float: left;
   }
 
-  .articleList .col-md-7 h2 {
-    font-size: 18px;
-    margin-top: 15px;
+  .article-content h2 {
+    .mt15 !important;
   }
 
-  .articleList .col-md-7 h5 {
-    margin: 6px 0;
+  .titleConn h2 {
+    font-size: 18px;
+    .m0;
+  }
+
+  .titleConn h5 {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .lost-content article {
+    .h_lh(44px, 22px);
   }
 }
 
@@ -354,6 +419,14 @@
     width: 180px;
     height: 180px;
   }
+
+  .article-content h2 {
+    .f14;
+    .tc;
+  }
+
+  .article-content h5 {
+  }
 }
 
 @media (max-width: 640px) {
@@ -362,30 +435,37 @@
     float: left;
   }
 
-  .articleList .col-md-7 h5 {
-    height: 38px;
+  .titleConn {
+    margin: 20px 0;
   }
 
-  .grid-title {
-    margin: 40px 0 30px 0;
+  .titleConn h2 {
+    font-size: 18px;
+  }
+
+  .titleConn h5 {
+    font-size: 12px;
+    height: 20px;
+  }
+
+  .article-content h2 {
+    .f12;
+    .tc;
+  }
+
+  .article-content h5, .article-content article {
+    .f10;
   }
 }
 
 @media (max-width: 480px) {
+  .article-title {
+    .f12;
+    .tc;
+  }
+
   .content-grid .col-md-4 {
     width: 100%;
-  }
-
-  .articleList .col-md-7 h2 {
-    height: 18px;
-  }
-
-  .grid-title h2, .articleList .title, .semi-title h3 {
-    font-size: 22px;
-  }
-
-  .grid-title h5, .article-title h5, .semi-title h5 {
-    font-size: 12px;
   }
 }
 
