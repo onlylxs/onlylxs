@@ -59,6 +59,7 @@
 
 .tr3d(@val1,@val2,@second:0.35s) {
   transform: translate(@val1,@val1);
+
   transition: @second;
   -webkit-transform: translate(@val1,@val2);
   -moz-transform: translate(@val1,@val2);
@@ -254,10 +255,6 @@
   background-position: center center;
 }
 
-.translucent {
-  background-color: rgba(0, 0, 0, 0.65);
-}
-
 .semi-background .titleConn {
   .mt0;
 }
@@ -271,11 +268,14 @@
   .cor1;
 }
 
-.special-item {
+.translucent {
+  background-color: rgba(0, 0, 0, 0.65);
+  .pr;
+  min-height: 300px;
 }
 
-.special-item .col-lg-4 {
-  margin-bottom: 40px;
+.special-item {
+  padding-bottom: 30px;
 }
 
 .special-item .col-lg-4 h4 {
@@ -308,7 +308,7 @@
   color: #fff;
 }
 
-/**/
+/*四个网格栅*/
 .content-grid2 {
   .mt20;
 }
@@ -350,7 +350,6 @@
   .m0a;
   .mt(-17px);
 }
-
 
 /*响应媒体查询*/
 @media (max-width: 1280px) {
