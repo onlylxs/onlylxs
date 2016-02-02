@@ -3,50 +3,53 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>提示</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <style>
-        .pro-container {
-            text-align: center;
-            width: 450px;
-            height: 400px;
-            background: #fff;
-            margin: 100px auto;
+        .theme-popover-mask {
+            z-index: 999;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+            -moz-opacity: 0.5;
+            display: none;
+            background-size: 100% 100%;
         }
 
-        .pro-container img {
-            width: 150px;
-            height: 150px;
-            margin: 80px auto 0 auto;
+        .fx-containers {
+            display: none;
         }
 
-        .proText-container {
-        }
-
-        h2, h5 {
-            font-weight: 100;
-            color: #000000;
-        }
-
-        h5 {
-            margin-top: -10px;
-            font-size: 14px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #000000;
-            margin: 0 2px;
-            font-size: 14px;
+        .fx-containers img {
+            width: 80%;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 99999;
         }
     </style>
 </head>
 <body>
-<div class="pro-container">
-    <img src=""/>
-
-    <div class="proText-container">
-        <h2>登录成功</h2>
-        <h5>页面自动<a href="">跳转</a>等待时间1ms</h5>
-    </div>
+<div class="fx-containers">
+    <img src="picFx.PNG"/>
 </div>
+<p class="click-pBtn">点击</p>
+
+<div class="theme-popover-mask"></div>
 </body>
 </html>
+<script>
+    $(function () {
+        $(".click-pBtn").click(function () {
+            $('.theme-popover-mask,.fx-containers').fadeIn(200);
+        });
+        $('.theme-popover-mask,.fx-containers').click(function () {
+            $('.theme-popover-mask,.fx-containers').fadeOut(200);
+        });
+    });
+</script>
