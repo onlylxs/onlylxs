@@ -5,4 +5,4 @@ var bannerSwiper = new Swiper('#banner-swiper', {
     prevButton: '.swiper-button-prev',
     nextButton: '.swiper-button-next',
     pagination: '.swiper-pagination'
-})
+});
