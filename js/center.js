@@ -24,5 +24,11 @@ $(function () {
         if(scrollTop+grid1.height()>grid1Top){
             grid1.find(".boxInfo").addClass("selected");
         }
+        if(scrollTop+grid2.height()>grid2Top){
+            grid2.find(".col-md-4,.panel-tabContainer").addClass("selected");
+        }
+        if(scrollTop+grid3.height()>grid3Top){
+            grid3.find(".col-lg-6").addClass("selected");
+        }
     }
 });
