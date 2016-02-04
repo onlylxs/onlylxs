@@ -33,5 +33,10 @@ $(function () {
         if(scrollTop+grid4.height()-100>grid4Top){
             grid4.find(".bottom-grid").addClass("selected");
         }
-    }
+    };
+    grid4.find(".bottom-grid").hover(function () {
+        grid4.find(".bottom-grid").css("opacity",1).removeClass("selected");
+        $(this).addClass("selected");
+        $(this).find(".p-title b").addClass("selected");
+    })
 });
