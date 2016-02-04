@@ -23,8 +23,8 @@
 #banner-swiper img{width: 100%;}
 /*公用*/
 .titleConn{text-align: center; margin: 60px 0;}
-.titleConn h2{text-align: center; overflow: hidden; margin-top: 0; color: #000; font-weight: bold; font-size: 24px;}
-.titleConn h5{font-size: 14px; color: #000; margin: 10px 0; line-height: 20px; overflow: hidden;}
+.titleConn h2{text-align: center; overflow: hidden; margin-top: 0; color: #000; font-weight: bold; font-size: 36px;}
+.titleConn h5{font-size: 24px; color: #454545; margin: 10px 0; line-height: 24px; overflow: hidden;}
 /*三张图文介绍*/
 .grid-title{text-align: center; margin: 60px 0 45px 0;}
 .content-grid:after{content: ""; clear: both;}
@@ -45,8 +45,8 @@
 .articleList .list-group-item{border: 1px solid #cccccc;}
 .col-imgText a{.dk;.wp100;.pr;}
 .col-imgText a .bagConn{background: rgba(0,0,0,0.55);.pos;top: 0;left:0;.wh(100%,100%); -webkit-transform: scale(0.3) rotate(-180deg); -moz-transform: scale(0.3) rotate(-180deg); -ms-transform: scale(0.3) rotate(-180deg); -o-transform: scale(0.3) rotate(-180deg); transform: scale(0.3) rotate(-180deg);.trTime(0.85s);.op0;.tc;.cor1;}
-.col-imgText a .bagConn h2{.tr3dPy(-100px,70px,1.25s);}
-.col-imgText a .bagConn h5{.tr3dPy(100px,70px,1.25s);}
+.col-imgText a .bagConn h2{.tr3dPy(-100px,50px,1.25s);}
+.col-imgText a .bagConn h5{.tr3dPy(100px,50px,1.25s);}
 .col-imgText a:hover .bagConn{-webkit-transform: scale(0.97) rotate(0deg); -moz-transform: scale(0.97) rotate(0deg); -ms-transform: scale(0.97) rotate(0deg); -o-transform: scale(0.97) rotate(0deg); transform: scale(0.97) rotate(0deg);.trTime(0.85s);opacity: 1;}
 .col-imgText a:hover .bagConn h2,
 .col-imgText a:hover .bagConn h5{.tr3dPy(0,70px,1.25s);}
@@ -70,7 +70,7 @@
 /*半背景*/
 .semi-background{background-size: cover; background: url("../images/semi-bag.jpg") no-repeat fixed; color: #fff; overflow: hidden; background-position: center center;}
 .semi-background .titleConn{.mt0;}
-.semi-background .titleConn h2{.pt30; .cor1;}
+.semi-background .titleConn h2{.cor1;padding-top: 70px;}
 .semi-background .titleConn h5{.cor1;}
 .translucent{background-color: rgba(0, 0, 0, 0.65); .pr; min-height: 300px;}
 .special-item{padding-bottom: 30px;}
@@ -100,13 +100,16 @@
 .gallery-grid .bottom-grid img{.wp100;}
 .gallery-grid .bottom-grid .btn-conn .p1, .bottom-grid .btn-conn .p2{background: #BA0C2F; .w(80%); .h_lh(35px, 35px); .f11; .fl; .cor1; padding-left: 15px; font-family: "宋体"; .m0;}
 .gallery-grid .bottom-grid .btn-conn .p2{background: #303030; .w(20%); .tc; font-size: 2em; .pl0; .fb;}
+.gallery-grid .bottom-grid{.op0;}
+.gallery-grid .bottom-grid.selected{animation: animation1 0.85s linear;opacity: 1;.tr3dPy(0,0,1.75s)}
+@keyframes animation1{0%{.tr3dPy(0,-30px);}25%{.tr3dPy(0,0);}50%{.tr3dPy(0,-30px);}100%{.tr3dPy(0,0);}}
 /*footer*/
 .panel-footer{.mt(40px);}
 /*响应媒体查询*/
 @media (max-width: 1280px){.article-content article{height: 60px;} .article-content a{margin: 10px 0;}}
-@media (max-width: 1024px){.content-grid .col-md-4{width: 33.3333%; float: left;} .titleConn h2{font-size: 18px; .m0;} .titleConn h5{margin: 5px 0;}}
+@media (max-width: 1024px){.content-grid .col-md-4{width: 33.3333%; float: left;} .titleConn h2{font-size: 22px; .m0;} .titleConn h5{margin: 5px 0;}}
 @media (max-width: 960px){.lost-content article{.h_lh(44px, 22px);}}
 @media (max-width: 768px){.content-grid .col-md-4{width: 33.3333%; float: left;} .content-grid .content-info h3{font-size: 16px; height: 17px;} .content-grid .content-info p{font-size: 12px; height: 16px;} .special-item dt img{width: 130px; height: 130px;} .article-content a{.w(80%); .m0a;} .article-content a p{.w(100%);} .special-item dt, .special-item dd{float: inherit; text-align: center; margin-left: 0;} .gallery-grid.bottom-grid .p-title{.f12;} .gallery-grid .bottom-grid .btn-conn .p1, .gallery-grid .bottom-grid .btn-conn .p2{.f10;} .gallery-grid .bottom-grid .btn-conn .p2{.f16;}}
-@media (max-width: 640px){.content-grid .col-md-4{width: 33.3333%; float: left;} .titleConn{margin: 20px 0;} .titleConn h2{font-size: 18px;} .titleConn h5{font-size: 1.2em; height: 20px;}}
+@media (max-width: 640px){.content-grid .col-md-4{width: 33.3333%; float: left;} .titleConn{margin: 20px 0;} .titleConn h2{font-size: 1.3em;} .titleConn h5{font-size: 1.1em; height: 40px;}}
 @media (max-width: 480px){.article-title{.f12; .tc;} .content-grid .col-md-4{width: 100%;}}
 @media (max-width: 320px){}

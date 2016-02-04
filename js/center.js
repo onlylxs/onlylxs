@@ -30,5 +30,9 @@ $(function () {
         if(scrollTop+grid3.height()>grid3Top){
             grid3.find(".col-lg-6").addClass("selected");
         }
+        console.log(scrollTop+grid4.height())
+        if(scrollTop+grid4.height()>grid4Top){
+            grid4.find(".bottom-grid").addClass("selected");
+        }
     }
 });

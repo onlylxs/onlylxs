@@ -39,13 +39,13 @@
   margin-top: 0;
   color: #000;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 36px;
 }
 .titleConn h5 {
-  font-size: 14px;
-  color: #000;
+  font-size: 24px;
+  color: #454545;
   margin: 10px 0;
-  line-height: 20px;
+  line-height: 24px;
   overflow: hidden;
 }
 /*三张图文介绍*/
@@ -204,11 +204,11 @@
 }
 .col-imgText a .bagConn h2 {
   transform: translate(-100px, -100px);
-  -webkit-transform: translate(-100px, 70px);
-  -moz-transform: translate(-100px, 70px);
-  -ms-transform: translate(-100px, 70px);
-  -o-transform: translate(-100px, 70px);
-  transform: translate(-100px, 70px);
+  -webkit-transform: translate(-100px, 50px);
+  -moz-transform: translate(-100px, 50px);
+  -ms-transform: translate(-100px, 50px);
+  -o-transform: translate(-100px, 50px);
+  transform: translate(-100px, 50px);
   -webkit-transition: 1.25s;
   -moz-transition: 1.25s;
   -ms-transition: 1.25s;
@@ -217,11 +217,11 @@
 }
 .col-imgText a .bagConn h5 {
   transform: translate(100px, 100px);
-  -webkit-transform: translate(100px, 70px);
-  -moz-transform: translate(100px, 70px);
-  -ms-transform: translate(100px, 70px);
-  -o-transform: translate(100px, 70px);
-  transform: translate(100px, 70px);
+  -webkit-transform: translate(100px, 50px);
+  -moz-transform: translate(100px, 50px);
+  -ms-transform: translate(100px, 50px);
+  -o-transform: translate(100px, 50px);
+  transform: translate(100px, 50px);
   -webkit-transition: 1.25s;
   -moz-transition: 1.25s;
   -ms-transition: 1.25s;
@@ -443,8 +443,8 @@
   margin-top: 0 !important;
 }
 .semi-background .titleConn h2 {
-  padding-top: 30px;
   color: #FFFFFF;
+  padding-top: 70px;
 }
 .semi-background .titleConn h5 {
   color: #FFFFFF;
@@ -641,6 +641,75 @@
   padding-left: 0;
   font-weight: bold;
 }
+.gallery-grid .bottom-grid {
+  opacity: 0;
+}
+.gallery-grid .bottom-grid.selected {
+  animation: animation1 0.85s linear;
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: 1.75s;
+  -moz-transition: 1.75s;
+  -ms-transition: 1.75s;
+  -o-transition: 1.75s;
+  transition: 1.75s;
+}
+@keyframes animation1 {
+  0% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, -30px);
+    -moz-transform: translate(0, -30px);
+    -ms-transform: translate(0, -30px);
+    -o-transform: translate(0, -30px);
+    transform: translate(0, -30px);
+    -webkit-transition: 0.35s;
+    -moz-transition: 0.35s;
+    -ms-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+  }
+  25% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: 0.35s;
+    -moz-transition: 0.35s;
+    -ms-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+  }
+  50% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, -30px);
+    -moz-transform: translate(0, -30px);
+    -ms-transform: translate(0, -30px);
+    -o-transform: translate(0, -30px);
+    transform: translate(0, -30px);
+    -webkit-transition: 0.35s;
+    -moz-transition: 0.35s;
+    -ms-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: 0.35s;
+    -moz-transition: 0.35s;
+    -ms-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+  }
+}
 /*footer*/
 .panel-footer {
   margin-top: 40px;
@@ -660,7 +729,7 @@
     float: left;
   }
   .titleConn h2 {
-    font-size: 18px;
+    font-size: 22px;
     margin: 0;
   }
   .titleConn h5 {
@@ -723,11 +792,11 @@
     margin: 20px 0;
   }
   .titleConn h2 {
-    font-size: 18px;
+    font-size: 1.3em;
   }
   .titleConn h5 {
-    font-size: 1.2em;
-    height: 20px;
+    font-size: 1.1em;
+    height: 40px;
   }
 }
 @media (max-width: 480px) {
