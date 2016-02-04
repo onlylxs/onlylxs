@@ -45,7 +45,7 @@
   font-size: 24px;
   color: #454545;
   margin: 10px 0;
-  line-height: 24px;
+  line-height: 26px;
   overflow: hidden;
 }
 /*三张图文介绍*/
@@ -425,7 +425,7 @@
   transition: 0.35s;
 }
 .panel-tabContainer .panel-body {
-  height: 60px;
+  height: 80px;
   line-height: 20px;
   overflow: hidden;
   padding: 0 15px;
@@ -645,7 +645,7 @@
   opacity: 0;
 }
 .gallery-grid .bottom-grid.selected {
-  animation: animation1 0.85s linear;
+  animation: animation1 1.15s linear;
   opacity: 1;
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
@@ -660,19 +660,6 @@
 }
 @keyframes animation1 {
   0% {
-    transform: translate(0, 0);
-    -webkit-transform: translate(0, -30px);
-    -moz-transform: translate(0, -30px);
-    -ms-transform: translate(0, -30px);
-    -o-transform: translate(0, -30px);
-    transform: translate(0, -30px);
-    -webkit-transition: 0.35s;
-    -moz-transition: 0.35s;
-    -ms-transition: 0.35s;
-    -o-transition: 0.35s;
-    transition: 0.35s;
-  }
-  25% {
     -webkit-transform: translate(0, 0);
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -684,13 +671,50 @@
     -o-transition: 0.35s;
     transition: 0.35s;
   }
-  50% {
+  20% {
     transform: translate(0, 0);
-    -webkit-transform: translate(0, -30px);
-    -moz-transform: translate(0, -30px);
-    -ms-transform: translate(0, -30px);
-    -o-transform: translate(0, -30px);
-    transform: translate(0, -30px);
+    -webkit-transform: translate(0, -50px);
+    -moz-transform: translate(0, -50px);
+    -ms-transform: translate(0, -50px);
+    -o-transform: translate(0, -50px);
+    transform: translate(0, -50px);
+    -webkit-transition: 0.35s;
+    -moz-transition: 0.35s;
+    -ms-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+  }
+  40% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: 0.35s;
+    -moz-transition: 0.35s;
+    -ms-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+  }
+  60% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, -50px);
+    -moz-transform: translate(0, -50px);
+    -ms-transform: translate(0, -50px);
+    -o-transform: translate(0, -50px);
+    transform: translate(0, -50px);
+    -webkit-transition: 0.35s;
+    -moz-transition: 0.35s;
+    -ms-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+  }
+  80% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
     -webkit-transition: 0.35s;
     -moz-transition: 0.35s;
     -ms-transition: 0.35s;
