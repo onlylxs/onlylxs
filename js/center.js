@@ -20,23 +20,17 @@ $(function () {
     var grid5Top=grid5.offset().top;
     window.onscroll = function () {
         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        console.log(scrollTop-grid1.height()+"--"+grid1Top)
-        if(scrollTop+grid1.height()>grid1Top){
+        if(scrollTop+300>grid1Top){
             grid1.find(".boxInfo").addClass("selected");
         }
-        if(scrollTop+grid2.height()>grid2Top){
+        if(scrollTop+300>grid2Top){
             grid2.find(".col-md-4,.panel-tabContainer").addClass("selected");
         }
-        if(scrollTop+grid3.height()>grid3Top){
+        if(scrollTop+300>grid3Top){
             grid3.find(".col-lg-6").addClass("selected");
         }
-        if(scrollTop+grid4.height()-100>grid4Top){
+        if(scrollTop+300>grid4Top){
             grid4.find(".bottom-grid").addClass("selected");
         }
     };
-    grid4.find(".bottom-grid").hover(function () {
-        grid4.find(".bottom-grid").css("opacity",1).removeClass("selected");
-        $(this).addClass("selected");
-        $(this).find(".p-title b").addClass("selected");
-    })
 });
