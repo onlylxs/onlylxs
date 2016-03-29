@@ -1186,4 +1186,17 @@
   .content-grid .col-md-4 {
     width: 100%;
   }
+  .content-grid5 .col-lg-3 {
+    transform: translate(20px, 20px);
+    -webkit-transform: translate(20px, 0);
+    -moz-transform: translate(20px, 0);
+    -ms-transform: translate(20px, 0);
+    -o-transform: translate(20px, 0);
+    transform: translate(20px, 0);
+    -webkit-transition: 0.35s;
+    -moz-transition: 0.35s;
+    -ms-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+  }
 }
